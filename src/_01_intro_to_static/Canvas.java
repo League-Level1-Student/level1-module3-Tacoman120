@@ -57,11 +57,11 @@ public class Canvas {
 
     public void addCircle(Circle circle) {
         circles.add(circle);
-
+  
         // Must place after adding new circle
         // no size - 1 to number starting from 1
         final int num = circles.size();
-        
+  
         JSlider colorSlider = new JSlider(SwingConstants.HORIZONTAL, 0, 255, 100);
         colorSlider.setPreferredSize(new Dimension(75, 50));
 
@@ -77,6 +77,7 @@ public class Canvas {
 
             circles.get(num-1).color = new Color(value, value, value);
             frame.repaint();
+         
         });
 
         radiusSlider.addChangeListener((e) -> {

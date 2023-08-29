@@ -10,13 +10,14 @@ public class Circle {
     /*
      * Add/remove the word "static" at the beginning of these variables
      */
-    int radius;
+   int radius;
     Color color;
-
+  
     public Circle(int r, Color c) {
         radius = r;
         color = c;
 
+        
         Random rand = new Random();
         x = rand.nextInt(Canvas.WIDTH / 2);
         y = rand.nextInt(Canvas.HEIGHT / 2);
